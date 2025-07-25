@@ -1,0 +1,27 @@
+.page {
+  position: relative;
+}
+
+/* Slide from right */
+.slide-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+/* Slide to left on exit */
+.slide-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
